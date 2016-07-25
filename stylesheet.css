@@ -1,0 +1,610 @@
+/*
+
+
+
+*/
+
+#wrapper
+{
+   height: 1000px;
+   width: 100%;
+   display: inline-block;
+   margin: 0 auto;
+   position: relative;
+}
+
+body
+{
+    overflow-x: hidden;
+    background-color: brown;
+}
+
+.extendfull, .extendleft, .axcelentsegment
+{
+    padding-left: 3000px;
+    margin-left: -3000px;
+}
+
+.extendfull, .extendright, .axcelentsegment
+{
+    padding-right: 3000px;
+    margin-right: -3000px;
+}
+
+
+
+
+#bodywrapper
+{
+    margin-top: 10%;
+}
+
+@media screen and (min-width: 1350px)
+{
+    .homevideo1, .homevideo2
+    {
+        width:560px;
+        height:315px;
+        position: relative;
+        top: 35px;
+    }
+
+    .homevideo1div, .homevideo2div
+    {
+        background-color: darkred;
+        width: 560px;
+        position: relative;
+        height: 395px;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .homevideo1div
+    {
+        float: left;
+        margin-left: 7%;
+    }
+    
+    .homevideo2div
+    {
+        float: right;
+        margin-right: 7%;
+    }
+
+    .homesegment
+    {
+        background-color: brown;
+        height: 600px;
+        position: relative;
+        z-index: 4;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1000px)
+{
+    #menubar
+    {
+        background-color: darkred;
+        margin-top: -10px;
+        width: 100%;
+        height: 15%;
+        float: top;
+        position: fixed;
+        text-align: justify;
+        z-index: 5;
+        min-height: 100px;
+        max-height: 100px;
+        max-width: 1500px;
+        min-width: 1000px;
+    }
+    
+        .stretch
+    {
+        width: 100%;
+        display: inline-block;
+        font-size: 0;
+        line-height: 0;
+        margin-right: 10%;
+    }
+    
+    .menubutton
+    {
+        display: inline-block;
+        margin-top: 5%;
+        vertical-align: top;
+        *display: inline;
+        zoom: 1;
+        text-decoration: none;
+        color: azure;
+        bottom: 20px;
+        position: relative;
+        float: top;
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+    
+    .axcelentsegment
+    {
+        background-color: brown;
+        height: 600px;
+        position: relative;
+        z-index: 4;
+    }
+
+    .axcelentcontent
+    {
+        display: inline-block;
+        position: relative;
+        top: 60px;
+        float: right;
+        width: calc(100% - 650px);
+        padding-right: -1%;
+        max-width: 60%;
+        font-size: 20px;
+        color: azure;
+        overflow: hidden;
+    }
+
+    .axcelentvideo
+    {
+        top: 60px;
+        margin-left: 5%;
+        position: relative;
+        width: 560px;
+        height: 315px;
+    }
+
+    .axcelentunderline
+    {
+        background-color: darkorange;
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        bottom: 0;
+        padding-left: 3000px;
+        margin-left: -3000px;
+    }
+
+    .axcelenttitle
+    {
+        width: 100%;
+        height: 15%;
+        text-align: center;
+        font-size: 40px;
+        top: 20px;
+        position: relative;
+        color: azure;
+    }
+
+    .hometitle
+    {
+        top: 20px;
+        margin: 0;
+        color: azure;
+        font-size: 40px;
+        position: relative;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    #calender
+    {
+        border: 0;
+        width: 100%;
+        height: 1000px;
+        background-color: brown;
+    }
+    
+    #mobilemenustart
+    {
+        display: none;
+    }
+    
+    #mobilemenu
+    {
+        display: none;
+    }
+    
+    .mobilemenubutton
+    {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1350px)
+{
+    .homesegment
+    {
+        background-color: brown;
+        height: 600px;
+        position: absolute;
+        display: block;
+        z-index: 4;
+    }
+    
+    .homevideo1, .homevideo2
+    {
+        width:560px;
+        height:315px;
+        position: relative;
+        top: 35px;
+    }
+
+    .homevideo1div, .homevideo2div
+    {
+        background-color: darkred;
+        width: 560px;
+        height: 395px;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .homevideo1div
+    {
+        margin-left: 25%;
+    }
+    
+    .homevideo2div
+    {
+        margin-left: 25%;
+        margin-top: 70px;
+    }
+}
+
+
+@media screen and (min-width: 540px) and (max-width: 1000px)
+{
+    #menubar
+    {
+        background-color: darkred;
+        margin-top: -10px;
+        width: 100%;
+        height: 15%;
+        float: top;
+        position: fixed;
+        text-align: justify;
+        z-index: 5;
+        min-height: 100px;
+        max-height: 100px;
+        max-width: 1000px;
+        min-width: 600px;
+    }
+    
+    .stretch
+    {
+        width: 75%;
+        display: inline-block;
+        font-size: 0;
+        line-height: 0;
+        margin-right: 10%;
+    }
+    
+    .menubutton
+    {
+        display: inline-block;
+        margin-top: 7%;
+        width: 10%;
+        vertical-align: top;
+        *display: inline;
+        width: 8%;
+        zoom: 1;
+        text-decoration: none;
+        color: azure;
+        bottom: 20px;
+        position: relative;
+        float: top;
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+    
+    
+    .axcelentsegment
+    {
+        background-color: brown;
+        height: 700px;
+        position: relative;
+        z-index: 4;
+    }
+
+    .axcelentcontent
+    {
+        display: block;
+        position: relative;
+        top: 4%;
+        margin-top: 2%;
+        width: 100%;
+        margin-left: 1%;
+        font-size: 20px;
+        color: azure;
+    }
+
+    .axcelentvideo
+    {
+        display: block;
+        top: 10px;
+        margin-left: 1%;
+        position: relative;
+        width: 480px;
+        height:270px;
+    }
+
+    .axcelentunderline
+    {
+        background-color: darkorange;
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        bottom: 0;
+        padding-left: 3000px;
+        margin-left: -3000px;
+    }
+
+    .axcelenttitle
+    {
+        width: 100%;
+        height: 15%;
+        font-size: 40px;
+        top: 50px;
+        margin-left: 1%;
+        zoom: 0.75;
+        position: relative;
+        color: azure;
+    }
+
+    .homevideo1, .homevideo2
+    {
+        position: relative;
+        top: 35px;
+        width: 480px;
+        height:270px;
+    }
+
+    .homevideo1div, .homevideo2div
+    {
+        background-color: darkred;
+        width: 480px;
+        position: relative;
+        height: 320px;
+        display: inline-block;
+        margin-left: 12%;
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .hometitle
+    {
+        top: 20px;
+        margin: 0;
+        color: azure;
+        font-size: 40px;
+        position: relative;
+        text-align: center;
+        display: inline-block;
+    }
+
+    #calendar
+    {
+        border: 0;
+        width: 100%;
+        margin-top: 50px;
+        position: absolute;
+        height: 1000px;
+        background-color: brown;
+    }
+    
+    .homesegment
+    {
+        background-color: brown;
+        height: 600px;
+        position: relative;
+        z-index: 4;
+    }
+    
+    #mobilemenustart
+    {
+        display: none;
+    }
+    
+    #mobilemenu
+    {
+        display: none;
+    }
+    
+    .mobilemenubutton
+    {
+        display: none;
+    }
+    
+    
+}
+
+@media screen and (max-width: 540px)
+{
+    #menubar
+    {
+        background-color: darkred;
+        margin-top: -10px;
+        width: 100%;
+        height: 15%;
+        float: top;
+        position: fixed;
+        text-align: justify;
+        z-index: 5;
+        min-height: 100px;
+        max-height: 100px;
+        max-width: 1500px;
+        min-width: 1000px;
+    }
+    
+    .stretch
+    {
+        width: 10%;
+        display: inline-block;
+        font-size: 0;
+        line-height: 0;
+        margin-right: 10%;
+    }
+    
+    .menubutton
+    {
+        display: none;
+    }
+    
+    #mobilemenustart
+    {
+        display: inline-block;
+        width: 10%;
+        vertical-align: top;
+        *display: inline;
+        width: 8%;
+        zoom: 1;
+        text-decoration: none;
+        color: azure;
+        bottom: -45px;
+        position: relative;
+        float: top;
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+    
+    #mobilemenu
+    {
+        background-color: azure;
+        width: 15%;
+        margin-top: 5%;
+        text-decoration: none;
+        display: none;
+    }
+    
+    a
+    {
+        text-decoration: none;
+    }
+    
+    
+    .mobilemenubutton
+    {
+        text-decoration: none;
+        color: darkred;
+        height: 30px;
+        text-align: center;
+        border-bottom: solid darkred;
+    }
+    
+    #mobilehomebutton
+    {
+        border-top: solid darkred;
+        height: 45px;
+    }
+    
+    
+    .mobiletext
+    {
+        
+    }
+    
+    .axcelentsegment
+    {
+        background-color: brown;
+        height: 700px;
+        position: relative;
+        z-index: 4;
+    }
+
+    .axcelentcontent
+    {
+        display: block;
+        position: relative;
+        top: 12%;
+        margin-top: 2%;
+        width: 100%;
+        margin-left: 1%;
+        font-size: 20px;
+        color: azure;
+    }
+
+    .axcelentvideo
+    {
+        display: block;
+        top: 80px;
+        margin-left: 1%;
+        position: relative;
+        width: 320px;
+        height:180px;
+    }
+
+    .axcelentunderline
+    {
+        background-color: darkorange;
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        bottom: 0;
+        padding-left: 3000px;
+        margin-left: -3000px;
+    }
+
+    .axcelenttitle
+    {
+        width: 100%;
+        height: 15%;
+        font-size: 40px;
+        top: 100px;
+        margin-left: 1%;
+        zoom: 0.75;
+        position: relative;
+        color: azure;
+    }
+
+    .homevideo1, .homevideo2
+    {
+        position: relative;
+        top: 35px;
+        width: 320px;
+        height:180px;
+    }
+
+    .homevideo1div, .homevideo2div
+    {
+        background-color: darkred;
+        width: 320px;
+        position: relative;
+        height: 240px;
+        display: inline-block;
+        margin-left: 10%;
+        margin-top: 15%;
+        text-align: center;
+    }
+    
+    .homesegment
+    {
+        background-color: brown;
+        height: 600px;
+        position: relative;
+        z-index: 4;
+    }
+    
+    .hometitle
+    {
+        top: 20px;
+        margin: 0;
+        color: azure;
+        font-size: 26px;
+        position: relative;
+        text-align: center;
+        display: inline-block;
+    }
+
+    #calendar
+    {
+        border: 0;
+        width: 100%;
+        margin-top: 100px;
+        height: 1000px;
+        background-color: brown;
+    }
+}
