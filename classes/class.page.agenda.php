@@ -25,7 +25,8 @@ class FonAgenda extends FonPage
     
     protected function bodyContent() 
     {
-        echo '<div id="calendar"></div>';
+        echo '<script type="text/javascript" src="javascript/menubarfixer.js"></script>
+            <div id="calendar"></div>';
         
     }
 }

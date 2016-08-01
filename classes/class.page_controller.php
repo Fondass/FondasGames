@@ -40,9 +40,11 @@ class FonController
         require_once("classes/class.pdo.php");
         require_once("classes/class.helpers.php");
         require_once("classes/class.database.php");
+        require_once("classes/class.login.php");
         
         $this->helper = new Helpers();
         $this->db = new FonDatabase();
+        $this->user = new FonLogin($this->db, $this->helper);
     }
     
 //================================================
@@ -54,7 +56,7 @@ class FonController
  */
 //================================================
     
-    public function checkRequest()
+    public function handleRequest()
     {
         if (isset($_POST["ajaxaction"]) || isset($_GET["ajaxaction"]))
         {
@@ -62,7 +64,7 @@ class FonController
         }
         else
         {
-            $this->handleRequest();
+            $this->handleHttpRequest();
         }  
     }
     
@@ -76,7 +78,7 @@ class FonController
  */
 //================================================   
     
-    protected function handleRequest() 
+    protected function handleHttpRequest() 
     {
         $pagevar =  $this->getPage();
         $page = $this->pageController($this->helper->specChars($pagevar));
@@ -134,9 +136,24 @@ class FonController
                 $page = new FonLetsPlays($this->db, $this->helper);
                 break;
             
-            case "contact":
-                require_once("classes/class.page.contact.php");
-                $page = new FonContact();
+            case "letstrys":
+                require_once("classes/class.page.letstrys.php");
+                $page = new FonLetsTrys($this->db, $this->helper);
+                break;
+            
+            case "about":
+                require_once("classes/class.page.about.php");
+                $page = new FonAbout();
+                break;
+            
+            case "login":
+                require_once("classes/class.page.login.php");
+                $page = new FonLoginPage($this->user, $this->db);
+                break;
+            
+            case "update":
+                require_once("classes/class.page.update.php");
+                $page = new FonUpdate($this->user, $this->db, $this->helper);
                 break;
                 
             case "agenda":

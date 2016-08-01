@@ -16,10 +16,11 @@ class FonHome extends FonPage
     
     protected function bodyContent()
     {
-        $video1 = $this->db->getVideosOnCategorie("letsplay");
-        $video2 = $this->db->getVideosOnCategorie("axellent");
+        $video1 = $this->db->getLetsplayVideos();
+        $video2 = $this->db->getAxellentVideos();
         
-        echo '<div class="homesegment">
+        echo '<script type="text/javascript" src="javascript/menubarfixer.js"></script>
+            <div class="homesegment">
             <div class="homevideo1div">
             <p class="hometitle">Newest Let\'s Play</p>
             <iframe class="homevideo1"  
@@ -29,10 +30,5 @@ class FonHome extends FonPage
                <iframe class="homevideo2" 
            src="'.$video2[0][1].'" frameborder="0" allowfullscreen></iframe></div>
             <div>';
-        
-        
-        
     }
-    
-
 }

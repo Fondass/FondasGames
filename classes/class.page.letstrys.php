@@ -6,9 +6,8 @@
  * 
  */
 
-class FonAxcelentGaming extends FonPage
+class FonLetsTrys extends FonPage
 {
- 
     public function __construct($db, $helper)
     {
         $this->db = $db;
@@ -17,8 +16,7 @@ class FonAxcelentGaming extends FonPage
     
     protected function bodyContent()
     {
-
-        $videos = $this->db->getAxellentVideos();
+        $videos = $this->db->getLetsTryVideos();
         foreach ($videos as $value)
         {
             $link = $value[1];
@@ -28,13 +26,12 @@ class FonAxcelentGaming extends FonPage
             echo '<script type="text/javascript" src="javascript/menubarlandscapefix.js"></script>
                 <div class="axcelentsegment">
            <div class="axcelenttitle">'.$title.'</div>
-           <iframe class="axcelentvideo"
+           <iframe class="axcelentvideo" 
            src="'.$link.'" frameborder="0" allowfullscreen></iframe>
            <div class="axcelentcontent">'.$content.'</div>
            
            <div class="axcelentunderline"></div>
-            </div>';
-            
+            </div>';    
         } 
     }
 }

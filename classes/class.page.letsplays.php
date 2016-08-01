@@ -16,14 +16,15 @@ class FonLetsPlays extends FonPage
     
     protected function bodyContent()
     {
-        $videos = $this->db->getVideosOnCategorie("letsplay");
+        $videos = $this->db->getLetsplayVideos();
         foreach ($videos as $value)
         {
             $link = $value[1];
             $title = $value[2];
-            $content = $value[4];
+            $content = $value[3];
            
-            echo '<div class="axcelentsegment">
+            echo '<script type="text/javascript" src="javascript/menubarlandscapefix.js"></script>
+                <div class="axcelentsegment">
            <div class="axcelenttitle">'.$title.'</div>
            <iframe class="axcelentvideo" 
            src="'.$link.'" frameborder="0" allowfullscreen></iframe>
